@@ -4,7 +4,9 @@
 
 GET is used to request data from a specified resource using an ASCII string of maximum 2048 characters. The request can be cached and remains in the browser history. Only used when requesting data and never for sensitive information. Encoding type “application/x-www-form-urlencoded”.
 
-A comparison between **POST** and **GET** is discussed on a separate page (https://github.com/virenio/HTTP-POST-vs-GET).
+A comparison between **POST** and **GET** is discussed on a separate page 
+
+(https://github.com/virenio/HTTP-POST-vs-GET).
 
 A simple framework explaining and implementing HTTP - GET is presented in this article. There is an actual implementation of two-way communication done to demonstrate the flow of data from the ESP32 to a website , process some variable on the website  and transfer data from Website to ESP32. The URL sent from ESP32 to The Website can be studied in detail. “ param1” can be scaled up to “paramN”. 
 
