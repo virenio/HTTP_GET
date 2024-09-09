@@ -63,6 +63,7 @@ $result1 =  $result1 +1 ;
 Data is processed
 
 $err =  updateOutput($result1);
+
 Processed Data is saved on the dataTable.
 
 **Note:**
