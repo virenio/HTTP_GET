@@ -23,16 +23,17 @@ The URL length limit of 2048 characters must be maintained.
 **Code**
 
 Code is presented in 2 parts one php server site based files and ESP32 code. A database is used to store interim values. 
-**Files: outputs_action.php    and HTTP_GET.ino.
-**
+
+**Files: outputs_action.php    and HTTP_GET.ino.**
+ 
 **HTTP_GET.ino**
 
 The code is straightforward. Will discuss the URL sent to the webpage. 
-String serverURL = "http://192.168.1.6/vdp_HTTP_GET/";
+String serverURL = "http://192.168.xx.xx/HTTP_GET/";
 String serverGet = "outputs_action.php?param=getData";
 String serverName = serverURL + serverGet + "&param1=" + String(val1) ;
 
-Note the settings of interest. **“ param” **and **“param1”**
+Note the settings of interest. **“param”**   and **“param1”**
 
 This will allow user to send unlimited combination of values to request data from the website.
 The student is requested to try various combinations and request data from the website. The code then receives the HTTP response and the payload.
@@ -40,7 +41,7 @@ The student is requested to try various combinations and request data from the w
   Free resources
   http.end();
 
-**outputs_action.php    **
+**outputs_action.php**
 
  if ($_SERVER["REQUEST_METHOD"] == "GET") {
  receives the request 
@@ -65,6 +66,7 @@ $err =  updateOutput($result1);
 Processed Data is saved on the dataTable.
 
 **Note:**
+
 1)	XAMPP based APACHE and MYSQL server used for localhost access.
 2)	ESP32 / ESP8266 programmed with Arduino IDE. Framework can be applied to other microcontrollers with WIFI, with small modifications.
 3)	<myWebSite.com (generic name ) > Cloud server website   on some hosting service of your choice.
