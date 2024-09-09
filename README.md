@@ -8,15 +8,19 @@ A comparison between **POST** and **GET** is discussed on a separate page (https
 
 A simple framework explaining and implementing HTTP - GET is presented in this article. There is an actual implementation of two-way communication done to demonstrate the flow of data from the ESP32 to a website , process some variable on the website  and transfer data from Website to ESP32. The URL sent from ESP32 to The Website can be studied in detail. “ param1” can be scaled up to “paramN”. 
 
-String  Data =      
+String  Data =   
+
                         "&param1=" + String(val1) +
+                        
                         "&param2=" + String(val2) + 
+                        
                            …………………………………
+                           
                         "&paramN=" + String(valN) +  "";
 
 The URL length limit of 2048 characters must be maintained. 
 
-**Code **
+**Code**
 
 Code is presented in 2 parts one php server site based files and ESP32 code. A database is used to store interim values. 
 **Files: outputs_action.php    and HTTP_GET.ino.
