@@ -22,9 +22,9 @@ The URL length limit of 2048 characters must be maintained.
 
 **Code**
 
-Code is presented in 2 parts one php server site based files and ESP32 code. A database is used to store interim values. 
+Code is presented in 3 files, two php server site based files and ESP32 code. A database is used to store interim values. 
 
-**Files: outputs_action.php    and HTTP_GET.ino.**
+**Files: outputs_action.php  ,dataTableAccess.php  and HTTP_GET.ino.**
  
 **HTTP_GET.ino**
 
