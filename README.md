@@ -76,7 +76,7 @@ Processed Data is saved on the dataTable.
 2)	ESP32 / ESP8266 programmed with Arduino IDE. Framework can be applied to other microcontrollers with WIFI, with small modifications.
 3)	<myWebSite.com (generic name ) > Cloud server website   on some hosting service of your choice.
 4)	PHP Script, JSON and JavaScript are used in the examples
-5)	The code and implementation are posted for Educational and training purposes only.are posted for Educational and training purposes only.
+5)	The code and implementation are posted for Educational and training purposes only. 
 .
 
 
