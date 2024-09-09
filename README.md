@@ -48,22 +48,31 @@ The student is requested to try various combinations and request data from the w
 **outputs_action.php**
 
  if ($_SERVER["REQUEST_METHOD"] == "GET") {
+ 
  receives the request 
+ 
 $action = clean_input($_GET["param"]);
+
         if ($action == "getData") {
+        
 param value is checked 
 
   $id = clean_input($_GET["param1"]);//not used
+  
 param1 is checked 
 
 $result = getData();
+
              $result1 = $result["intVal1"];
+             
 Data is read from the dataTable
 
 echo $result1 ;
+
 data is sent to the ESP32
 
 $result1 =  $result1 +1 ;
+
 Data is processed
 
 $err =  updateOutput($result1);
