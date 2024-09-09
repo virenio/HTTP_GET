@@ -29,8 +29,11 @@ Code is presented in 2 parts one php server site based files and ESP32 code. A d
 **HTTP_GET.ino**
 
 The code is straightforward. Will discuss the URL sent to the webpage. 
+
 String serverURL = "http://192.168.xx.xx/HTTP_GET/";
+
 String serverGet = "outputs_action.php?param=getData";
+
 String serverName = serverURL + serverGet + "&param1=" + String(val1) ;
 
 Note the settings of interest. **“param”**   and **“param1”**
