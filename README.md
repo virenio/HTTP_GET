@@ -42,6 +42,7 @@ This will allow user to send unlimited combination of values to request data fro
 The student is requested to try various combinations and request data from the website. The code then receives the HTTP response and the payload.
 
   Free resources
+  
   http.end();
 
 **outputs_action.php**
